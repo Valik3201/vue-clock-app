@@ -1,7 +1,7 @@
 <template>
   <div v-for="quote in data" :key="quote.id">
     <p v-for="quote in data">"{{ quote.content }}"</p>
-    <p v-for="quote in data">{{ quote.author }}</p>
+    <p v-for="quote in data" class="font-bold">{{ quote.author }}</p>
 
     <button @click="getRandomQuote">Refresh</button>
   </div>

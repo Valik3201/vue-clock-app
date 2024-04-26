@@ -1,6 +1,9 @@
 <template>
   <div>
-    <p>{{ formattedTime }} {{ abbreviation }}</p>
+    <p class="font-bold text-[12.5rem]">
+      {{ formattedTime }}
+      <span class="font-light text-[2.5rem]">{{ abbreviation }}</span>
+    </p>
     <Location />
     <p>Current Timezone {{ timezone }}</p>
     <p>Day Of The Year {{ dayOfTheYear }}</p>
