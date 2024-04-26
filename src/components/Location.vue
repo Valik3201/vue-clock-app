@@ -19,13 +19,13 @@ export default {
   },
   methods: {
     getLocation() {
-      const apiUrl = "https://ip-api.com/json/";
+      const apiUrl = "https://freeipapi.com/api/json";
 
       axios
         .get(apiUrl)
         .then((response) => {
-          this.city = response.data.city;
-          this.country = response.data.country;
+          this.city = response.data.cityName;
+          this.country = response.data.countryName;
         })
         .catch((error) => {
           console.error("Error fetching location:", error);
