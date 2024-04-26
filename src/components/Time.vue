@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     getCurrentTime() {
-      const apiUrl = "http://worldtimeapi.org/api/ip";
+      const apiUrl = "https://worldtimeapi.org/api/ip";
 
       axios
         .get(apiUrl)

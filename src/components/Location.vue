@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     getLocation() {
-      const apiUrl = "http://ip-api.com/json/";
+      const apiUrl = "https://ip-api.com/json/";
 
       axios
         .get(apiUrl)
