@@ -1,8 +1,9 @@
 <template>
   <div
-    class="flex flex-col justify-between h-screen py-20 font-inter text-white"
+    class="flex flex-col justify-between h-screen font-inter text-white"
     :class="{
       'py-0': showInfo,
+      'py-20': !showInfo,
     }"
   >
     <div
@@ -37,7 +38,7 @@
         <div>
           <button
             @click="toggleInfo"
-            class="flex items-center bg-white text-black/50 gap-3 rounded-full p-2 pl-6 font-bold uppercase"
+            class="flex items-center bg-white text-button text-black/50 gap-3 rounded-full p-2 pl-6 font-bold uppercase"
           >
             {{ buttonText }}
             <span
@@ -52,7 +53,11 @@
     <div
       id="info"
       v-if="showInfo"
-      class="flex items-center h-1/2 text-dark-gray bg-white backdrop-filter backdrop-blur-xl bg-opacity-50 firefox:bg-opacity-30"
+      :class="{
+        'text-dark-gray bg-white': dayTime,
+        'text-white bg-black': !dayTime,
+      }"
+      class="flex items-center h-1/2 backdrop-filter backdrop-blur-xl bg-opacity-75 firefox:bg-opacity-30"
     >
       <div
         class="container grid grid-cols-2 gap-x-24 divide-x-2 divide-[#979797]"
@@ -104,6 +109,7 @@ export default {
       weekNumber: [],
       showInfo: false,
       buttonText: "MORE",
+      dayTime: true,
     };
   },
   mounted() {
@@ -136,6 +142,7 @@ export default {
       } else {
         greetingText = "GOOD EVENING, IT’S CURRENTLY";
         icon = "moon";
+        this.dayTime = false;
       }
 
       return { text: greetingText, icon: icon };
