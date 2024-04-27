@@ -1,17 +1,22 @@
 <template>
   <div>
-    <p>In {{ city }}, {{ country }}</p>
+    <p class="text-h3 uppercase font-bold">In {{ city }}, {{ country }}</p>
+    <BackgroundImage :city="city" :country="country" />
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import BackgroundImage from "./BackgroundImage.vue";
 
 export default {
+  components: {
+    BackgroundImage,
+  },
   data() {
     return {
-      city: [],
-      country: [],
+      city: "",
+      country: "",
     };
   },
   mounted() {
