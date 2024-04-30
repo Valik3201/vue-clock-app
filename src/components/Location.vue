@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p class="text-h3 uppercase font-bold">In {{ city }}, {{ country }}</p>
+    <p class="text-h6 md:text-h5 lg:text-h3 uppercase font-bold">
+      In {{ city }}, {{ country }}
+    </p>
     <BackgroundImage :city="city" :country="country" />
   </div>
 </template>
