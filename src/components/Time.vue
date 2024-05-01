@@ -25,7 +25,11 @@
           <Location @locationChanged="handleLocationChanged" />
         </div>
 
-        <ToggleInfoButton :buttonText="buttonText" :toggleInfo="toggleInfo" />
+        <ToggleInfoButton
+          :buttonText="buttonText"
+          :toggleInfo="toggleInfo"
+          :showInfo="showInfo"
+        />
       </div>
     </div>
 

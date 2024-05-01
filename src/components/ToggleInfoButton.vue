@@ -6,6 +6,7 @@
     {{ buttonText }}
     <span
       class="flex items-center justify-center bg-dark-gray rounded-full w-8 h-8 md:w-10 md:h-10 group-hover:bg-[#999999] transition ease-in-out duration-300"
+      :class="{ 'rotate-180 transform duration-500': showInfo }"
       ><icon name="arrow"
     /></span>
   </button>
@@ -20,6 +21,7 @@ export default {
   },
   props: {
     buttonText: String,
+    showInfo: Boolean,
     toggleInfo: Function,
   },
   methods: {
