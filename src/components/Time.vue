@@ -1,4 +1,6 @@
 <template>
+  <BackgroundImage :city="city" :country="country" />
+
   <div
     class="flex flex-col justify-between h-screen font-inter text-white"
     :class="{
@@ -28,7 +30,7 @@
             :abbreviation="abbreviation"
           />
 
-          <Location />
+          <Location @locationChanged="handleLocationChanged" />
         </div>
 
         <ToggleInfoButton :buttonText="buttonText" :toggleInfo="toggleInfo" />
@@ -41,6 +43,7 @@
 
 <script>
 import axios from "axios";
+import BackgroundImage from "./BackgroundImage.vue";
 import Greeting from "./Greeting.vue";
 import Location from "./Location.vue";
 import TimeDisplay from "./TimeDisplay.vue";
@@ -50,6 +53,7 @@ import Quote from "./Quote.vue";
 
 export default {
   components: {
+    BackgroundImage,
     Greeting,
     Location,
     TimeDisplay,
@@ -67,6 +71,8 @@ export default {
         dayOfTheWeek: this.dayOfTheWeek,
         weekNumber: this.weekNumber,
       },
+      city: "",
+      country: "",
       showInfo: false,
       buttonText: "MORE",
       dayTime: true,
@@ -119,6 +125,10 @@ export default {
         .catch((error) => {
           console.error("Error fetching current time:", error);
         });
+    },
+    handleLocationChanged(locationData) {
+      this.city = locationData.city;
+      this.country = locationData.country;
     },
     toggleInfo() {
       this.showInfo = !this.showInfo;

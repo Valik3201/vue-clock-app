@@ -3,18 +3,13 @@
     <p class="text-h6 md:text-h5 lg:text-h3 uppercase font-bold">
       In {{ city }}, {{ country }}
     </p>
-    <BackgroundImage :city="city" :country="country" />
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import BackgroundImage from "./BackgroundImage.vue";
 
 export default {
-  components: {
-    BackgroundImage,
-  },
   data() {
     return {
       city: "",
@@ -33,11 +28,21 @@ export default {
         .then((response) => {
           this.city = response.data.cityName;
           this.country = response.data.countryName;
+
+          this.$emit("locationChanged", {
+            city: this.city,
+            country: this.country,
+          });
         })
         .catch((error) => {
           console.error("Error fetching location:", error);
           this.city = "Unknown";
           this.country = "Unknown";
+
+          this.$emit("locationChanged", {
+            city: this.city,
+            country: this.country,
+          });
         });
     },
   },
