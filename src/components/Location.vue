@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <p class="text-h6 md:text-h5 lg:text-h3 uppercase font-bold">
-      In {{ city }}, {{ country }}
-    </p>
-  </div>
+  <p
+    class="text-h6 md:text-h5 lg:text-h3 uppercase font-bold"
+    aria-label="Current Location"
+  >
+    In {{ city }}, {{ country }}
+  </p>
 </template>
 
 <script>

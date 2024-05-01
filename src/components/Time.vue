@@ -1,7 +1,7 @@
 <template>
   <BackgroundImage :city="city" :country="country" />
 
-  <div
+  <main
     class="h-svh font-inter text-white py-12 lg:py-20 transform duration-500"
     :class="{
       '-translate-y-[40%] md:-translate-y-1/3 lg:-translate-y-1/2 ': showInfo,
@@ -34,7 +34,7 @@
     </div>
 
     <TimeInfo :timeInfo="timeInfo" :showInfo="showInfo" :dayTime="dayTime" />
-  </div>
+  </main>
 </template>
 
 <script>

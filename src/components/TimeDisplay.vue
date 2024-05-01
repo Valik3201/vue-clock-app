@@ -1,5 +1,8 @@
 <template>
-  <div class="flex gap-1 md:gap-3 items-end">
+  <div
+    class="flex gap-1 md:gap-3 items-end"
+    aria-label="Current time with abbreviation"
+  >
     <h1 class="font-bold text-h1-3 md:text-h1-2 lg:text-h1">
       {{ formattedTime }}
     </h1>

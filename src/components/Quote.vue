@@ -2,16 +2,19 @@
   <div v-for="quote in data" :key="quote.id" class="container">
     <div class="flex justify-between">
       <div class="flex items-start gap-4 text-h7 md:text-h5">
-        <div class="max-w-[33.75rem]">
+        <div class="max-w-[33.75rem]" aria-label="Random Quotes">
           <p v-for="quote in data" class="mb-3">"{{ quote.content }}"</p>
           <p v-for="quote in data" class="font-bold">{{ quote.author }}</p>
         </div>
 
         <button @click="getRandomQuote" class="pt-1">
           <icon name="refresh" />
+          <span class="sr-only">Refresh Quote</span>
         </button>
       </div>
-      <p class="text-h2 font-bold hidden lg:block">clock.</p>
+      <p class="text-h2 font-bold hidden lg:block" aria-label="Logo Clock.">
+        clock.
+      </p>
     </div>
   </div>
 </template>

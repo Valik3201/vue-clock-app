@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-4">
     <icon :name="icon" />
-    <p class="text-h6 md:text-h5 lg:text-h4 uppercase">
+    <p class="text-h6 md:text-h5 lg:text-h4 uppercase" aria-label="Greeting">
       {{ text }}<span class="hidden md:inline-block">, it's currently</span>
     </p>
   </div>
