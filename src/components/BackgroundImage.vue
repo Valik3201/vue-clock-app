@@ -57,7 +57,7 @@ export default {
         })
         .catch((error) => {
           console.error("Error fetching background image:", error);
-          this.backgroundImageUrl = "/background/desktop/bg-image-daytime.jpg";
+          this.backgroundImageUrl = "/background/bg-image-daytime.jpg";
         });
     },
   },
