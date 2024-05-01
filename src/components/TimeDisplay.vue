@@ -4,7 +4,7 @@
       {{ formattedTime }}
     </h1>
     <p
-      class="font-light text-h6 md:text-[2rem] lg:text-abbreviation lg:leading-loose"
+      class="font-light text-h6 md:text-[2rem] lg:text-abbreviation pb-1 md:pb-5 lg:pb-7"
     >
       {{ abbreviation }}
     </p>

@@ -2,23 +2,19 @@
   <BackgroundImage :city="city" :country="country" />
 
   <div
-    class="flex flex-col justify-between h-screen font-inter text-white"
+    class="h-screen font-inter text-white py-12 lg:py-20 transform duration-500"
     :class="{
-      'py-0': showInfo,
-      'py-12 lg:py-20': !showInfo,
+      '-translate-y-1/3 lg:-translate-y-1/2 ': showInfo,
+      '-translate-y-0': !showInfo,
     }"
   >
-    <div :class="{ hidden: showInfo }">
+    <div class="container flex flex-col justify-between h-full">
+      <!-- :class="{
+        'py-10 md:py-16 lg:py-20 flex items-end lg:block': showInfo,
+      }" -->
+      <!-- h-3/4 lg:h-1/2  -->
       <Quote />
-    </div>
 
-    <div
-      class="container"
-      :class="{
-        'h-3/4 lg:h-1/2 py-10 md:py-16 lg:py-20 flex items-end lg:block':
-          showInfo,
-      }"
-    >
       <div
         class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-12 md:gap-20"
       >
