@@ -4,15 +4,11 @@
   <div
     class="h-svh font-inter text-white py-12 lg:py-20 transform duration-500"
     :class="{
-      '-translate-y-1/3 lg:-translate-y-1/2 ': showInfo,
+      '-translate-y-[40%] md:-translate-y-1/3 lg:-translate-y-1/2 ': showInfo,
       '-translate-y-0': !showInfo,
     }"
   >
     <div class="container flex flex-col justify-between h-full">
-      <!-- :class="{
-        'py-10 md:py-16 lg:py-20 flex items-end lg:block': showInfo,
-      }" -->
-      <!-- h-3/4 lg:h-1/2  -->
       <Quote />
 
       <div

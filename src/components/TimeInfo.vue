@@ -4,7 +4,7 @@
       'text-dark-gray bg-white': dayTime,
       'text-white bg-black': !dayTime,
     }"
-    class="flex items-center w-full h-1/3 lg:h-1/2 backdrop-filter backdrop-blur-xl bg-opacity-75 firefox:bg-opacity-30 absolute -bottom-1/3 lg:-bottom-1/2 right-0"
+    class="flex items-center w-full h-2/5 md:h-1/3 lg:h-1/2 backdrop-filter backdrop-blur-xl bg-opacity-75 firefox:bg-opacity-30 absolute -bottom-[40%] md:-bottom-1/3 lg:-bottom-1/2 right-0"
   >
     <div
       class="container grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 lg:gap-x-24 lg:divide-x-2 divide-[#979797]"
