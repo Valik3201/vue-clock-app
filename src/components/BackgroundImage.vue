@@ -46,7 +46,7 @@ export default {
       const city = this.city;
       const country = this.country;
 
-      const ACCESS_KEY = "6_r1Q1jbNOtDV-cy7O_R-stjwlmv7MCALLuGeeW6RJ4";
+      const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 
       const apiUrl = `https://api.unsplash.com/photos/random/?query=${city}&collections=${country}&client_id=${ACCESS_KEY}`;
 
@@ -56,7 +56,7 @@ export default {
           this.backgroundImageUrl = response.data.urls.regular;
         })
         .catch((error) => {
-          console.error("Error fetching background image:", error);
+          console.error("Error fetching background image:", error.message);
           this.backgroundImageUrl = "/background/bg-image-daytime.jpg";
         });
     },
