@@ -9,6 +9,9 @@ This project is a Vue application designed to display the current time and locat
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 ![Unsplash Badge](https://img.shields.io/badge/Unsplash-000?logo=unsplash&logoColor=fff&style=flat)
 
+[![screenshot](https://github.com/Valik3201/vue-clock-app/blob/main/public/screenshot-1.png)](https://github.com/Valik3201/vue-clock-app/blob/main/public/screenshot-1.png)
+[![screenshot](https://github.com/Valik3201/vue-clock-app/blob/main/public/screenshot-2.png)](https://github.com/Valik3201/vue-clock-app/blob/main/public/screenshot-2.png)
+
 ## Overview
 
 The Vue Clock App is a project developed for learning purposes, focusing on utilizing Vue.js framework. It demonstrates the implementation of fetching data from APIs, responsive design, dynamic content rendering, and interaction handling.
@@ -96,5 +99,9 @@ Yes, Vue is well-suited for projects of this nature. It provides intuitive tools
 [![Frontend Mentor Badge](https://img.shields.io/badge/Frontend%20Mentor-3F54A3?logo=frontendmentor&logoColor=fff&style=flat)](https://www.frontendmentor.io/profile/Valik3201)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-EA4335?logo=gmail&logoColor=fff&style=flat)](mailto:valik3201@gmail.com)
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=fff&style=flat)](https://www.linkedin.com/in/valentynchernetskyi/)
+
+## Acknowledgements
+
+This project was created as a challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/clock-app-LMFaxFwrM), a platform that provides challenges for developers to practice their skills and improve their frontend development abilities. Many thanks to Frontend Mentor for providing the inspiration and opportunity to work on this project.
 
 Feel free to explore the code and provide feedback! 🚀
