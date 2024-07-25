@@ -7,9 +7,7 @@
   >
     <div
       class="w-full h-full flex flex-col justify-center items-center backdrop-brightness-50"
-    >
-      <slot></slot>
-    </div>
+    ></div>
   </div>
 </template>
 
